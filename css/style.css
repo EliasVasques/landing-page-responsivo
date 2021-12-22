@@ -1,0 +1,192 @@
+
+/* GERAL */
+* {
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+body {
+    margin: 0;
+
+    color: #333;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 20px;
+}
+
+div {
+    padding: 20px;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 450px;
+
+    background-image: url("../img/imagem-header.png");
+    background-position: center;    
+}
+header div {
+    color: white;
+    width: 800px;
+}
+header button {
+    width: 160px;
+    height: 65px;
+
+    background-color: rgb(51, 50, 50);
+    border: 0.5px solid rgb(148, 148, 148);
+    color: white;
+    font-size: 18px;
+}
+header button:hover {
+    background-color: rgb(221, 221, 221);
+    border: 0.5px solid rgb(51, 50, 50);
+    color: #000;
+    transition: all 0.25s;
+}
+
+/* AREA 1 */
+#texto1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#texto1 span {
+    flex: 1;  
+    margin: 10px;
+}
+#area1 h2 {
+    text-align: center;
+}
+
+/* AREA 2 */
+#area2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #333;
+
+    height: 500px;
+}
+#area2 div {
+    width: 250px;
+    height: 450px;
+
+    margin: 0 20px;
+    padding: 0;
+    
+    background-color: white;
+}
+#area2 img {
+    width: 100%;
+}
+#area2 h3, #area2 p {
+    padding: 20px;
+    margin: 0;
+}
+
+/* AREA 3 */
+#area3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centralizar vertical*/
+    
+    text-align: center;
+    
+    height: auto;
+    padding: 20px;
+}
+
+/* AREA 4 */
+#area4 {
+    display: flex;
+    color: white;
+}
+#area4 div {
+    flex: 1;
+}
+.contato {
+    background-color: #2690d4;
+}
+.sobre-nos {
+    background-color: #333;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    background-color: #000;
+    color: white;
+}
+footer div {
+    flex: 1;
+}
+footer a {
+    color: #2690d4;
+}
+
+
+@media (max-width:725px) { 
+
+    /* HEADER */
+    header div {
+        width: 98%;
+        height: auto;
+    }
+
+    /* AREA 1 */
+    #texto1 {
+        display: block;
+    }
+    #texto1 span {
+        margin: 0;
+    }
+
+    /* AREA 2 */
+    #area2 {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    #area2 div {
+        width: 100%;
+        height: auto; 
+        margin: 20px 10px;
+    }
+
+    /* AREA 4 */
+    #area4 {
+        flex-wrap: wrap;
+    }
+    #area4 div {
+        flex: none;
+        width: 100%;
+    }
+
+    /* FOOTER */
+    footer {
+        display: block;
+        padding: 20px;
+    }
+    footer p, footer div {
+        margin: 0;
+        padding: 0;
+    }
+}
+@media(max-width: 230px) {
+    /* HEADER */
+    header button {
+        width: auto;
+    }
+}
